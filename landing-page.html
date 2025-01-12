@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoHuts.net</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #8B7355;    /* Warm earthy brown */
+            --color-secondary: #C4A484;  /* Light beige */
+            --color-accent: #D2B48C;     /* Tan */
+            --color-background: #FAF3E0; /* Light cream */
+            --color-text: #5C4033;       /* Dark brown */
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, var(--color-background) 0%, var(--color-secondary) 100%);
+            color: var(--color-text);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin: 0 auto 2rem;
+        }
+        
+        .logo svg {
+            width: 100%;
+            height: auto;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(139, 115, 85, 0.1);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            color: var(--color-primary);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- First Hut -->
+                    <g transform="translate(20, 30)">
+                        <!-- Roof -->
+                        <path d="M0 40 L35 10 L70 40" fill="none" stroke="#8B7355" stroke-width="3"/>
+                        <!-- House -->
+                        <rect x="15" y="40" width="40" height="30" fill="none" stroke="#8B7355" stroke-width="3"/>
+                        <!-- Door -->
+                        <rect x="30" y="50" width="10" height="20" fill="none" stroke="#8B7355" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Second Hut -->
+                    <g transform="translate(110, 40)">
+                        <!-- Roof -->
+                        <path d="M0 40 L35 10 L70 40" fill="none" stroke="#8B7355" stroke-width="3"/>
+                        <!-- House -->
+                        <rect x="15" y="40" width="40" height="30" fill="none" stroke="#8B7355" stroke-width="3"/>
+                        <!-- Window -->
+                        <rect x="30" y="45" width="10" height="10" fill="none" stroke="#8B7355" stroke-width="2"/>
+                    </g>
+                    
+                    <!-- Ground -->
+                    <path d="M10 100 C50 90, 150 90, 190 100" stroke="#8B7355" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <h1>TwoHuts.net</h1>
+            <div class="subtitle">A Family Domain</div>
+        </div>
+        <div class="content">
+            <p>Welcome to TwoHuts.net. This domain serves as our family's digital home, providing secure email services for our household.</p>
+            <p>If you need to contact us, please reach out to our family members directly through their email addresses.</p>
+        </div>
+    </div>
+    <div class="footer">
+        © 2025 TwoHuts.net - All rights reserved
+    </div>
+</body>
+</html>
